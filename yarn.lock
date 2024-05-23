@@ -9521,6 +9521,11 @@ icss-utils@^4.0.0, icss-utils@^4.1.1:
   dependencies:
     postcss "^7.0.14"
 
+idb@^7.0.1:
+  version "7.1.1"
+  resolved "https://registry.npmjs.org/idb/-/idb-7.1.1.tgz"
+  integrity sha512-gchesWBzyvGHRO9W8tzUWFDycow5gwjvFKfyV9FF32Y7F50yZMp7mP+T2mJIWFx49zicqyC4uefHM17o6xKIVQ==
+
 idb@3.0.2:
   version "3.0.2"
   resolved "https://registry.npmjs.org/idb/-/idb-3.0.2.tgz"
@@ -17816,7 +17821,7 @@ workbox-core@^5.1.4:
   resolved "https://registry.npmjs.org/workbox-core/-/workbox-core-5.1.4.tgz"
   integrity sha512-+4iRQan/1D8I81nR2L5vcbaaFskZC2CL17TLbvWVzQ4qiF/ytOGF6XeV54pVxAvKUtkLANhk8TyIUMtiMw2oDg==
 
-workbox-core@^7.1.0:
+workbox-core@^7.1.0, workbox-core@7.1.0:
   version "7.1.0"
   resolved "https://registry.npmjs.org/workbox-core/-/workbox-core-7.1.0.tgz"
   integrity sha512-5KB4KOY8rtL31nEF7BfvU7FMzKT4B5TkbYa2tzkS+Peqj0gayMT9SytSFtNzlrvMaWgv6y/yvP9C0IbpFjV30Q==
@@ -17827,6 +17832,14 @@ workbox-expiration@^5.1.4:
   integrity sha512-oDO/5iC65h2Eq7jctAv858W2+CeRW5e0jZBMNRXpzp0ZPvuT6GblUiHnAsC5W5lANs1QS9atVOm4ifrBiYY7AQ==
   dependencies:
     workbox-core "^5.1.4"
+
+workbox-expiration@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.npmjs.org/workbox-expiration/-/workbox-expiration-7.1.0.tgz"
+  integrity sha512-m5DcMY+A63rJlPTbbBNtpJ20i3enkyOtSgYfv/l8h+D6YbbNiA0zKEkCUaMsdDlxggla1oOfRkyqTvl5Ni5KQQ==
+  dependencies:
+    idb "^7.0.1"
+    workbox-core "7.1.0"
 
 workbox-google-analytics@^5.1.4:
   version "5.1.4"
@@ -17852,6 +17865,15 @@ workbox-precaching@^5.1.4:
   dependencies:
     workbox-core "^5.1.4"
 
+workbox-precaching@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.npmjs.org/workbox-precaching/-/workbox-precaching-7.1.0.tgz"
+  integrity sha512-LyxzQts+UEpgtmfnolo0hHdNjoB7EoRWcF7EDslt+lQGd0lW4iTvvSe3v5JiIckQSB5KTW5xiCqjFviRKPj1zA==
+  dependencies:
+    workbox-core "7.1.0"
+    workbox-routing "7.1.0"
+    workbox-strategies "7.1.0"
+
 workbox-range-requests@^5.1.4:
   version "5.1.4"
   resolved "https://registry.npmjs.org/workbox-range-requests/-/workbox-range-requests-5.1.4.tgz"
@@ -17866,6 +17888,13 @@ workbox-routing@^5.1.4:
   dependencies:
     workbox-core "^5.1.4"
 
+workbox-routing@^7.1.0, workbox-routing@7.1.0:
+  version "7.1.0"
+  resolved "https://registry.npmjs.org/workbox-routing/-/workbox-routing-7.1.0.tgz"
+  integrity sha512-oOYk+kLriUY2QyHkIilxUlVcFqwduLJB7oRZIENbqPGeBP/3TWHYNNdmGNhz1dvKuw7aqvJ7CQxn27/jprlTdg==
+  dependencies:
+    workbox-core "7.1.0"
+
 workbox-strategies@^5.1.4:
   version "5.1.4"
   resolved "https://registry.npmjs.org/workbox-strategies/-/workbox-strategies-5.1.4.tgz"
@@ -17873,6 +17902,13 @@ workbox-strategies@^5.1.4:
   dependencies:
     workbox-core "^5.1.4"
     workbox-routing "^5.1.4"
+
+workbox-strategies@^7.1.0, workbox-strategies@7.1.0:
+  version "7.1.0"
+  resolved "https://registry.npmjs.org/workbox-strategies/-/workbox-strategies-7.1.0.tgz"
+  integrity sha512-/UracPiGhUNehGjRm/tLUQ+9PtWmCbRufWtV0tNrALuf+HZ4F7cmObSEK+E4/Bx1p8Syx2tM+pkIrvtyetdlew==
+  dependencies:
+    workbox-core "7.1.0"
 
 workbox-streams@^5.1.4:
   version "5.1.4"
