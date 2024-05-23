@@ -10,7 +10,7 @@ import ScrollToTop from './components/ScrollToTop';
 import { ProgressBarStyle } from './components/LoadingScreen';
 import NotistackProvider from './components/NotistackProvider';
 import ThemePrimaryColor from './components/ThemePrimaryColor';
-import ListEggs from './components/ListEggs';
+import ListEggs from './components/listeggs/ListEggs';
 
 // ----------------------------------------------------------------------
 
@@ -25,8 +25,8 @@ export default function App() {
             <Settings />
             <ScrollToTop />
             <Router />
-            <ListEggs/>
           </NotistackProvider>
+          <ListEggs/>
         </RtlLayout>
       </ThemePrimaryColor>
     </ThemeConfig>

@@ -1,14 +1,15 @@
 
 import React, { useState, useEffect } from 'react';
+import "./listeggs.css"
 import axios from 'axios'; // Import Axios for making HTTP requests
 
-const renderType = (type) => {
-    const newType = type.toString()
-    if (newType === "1") {
-        return "1 month"
-    }
-    return newType.toString() + "months"
-}
+// const renderType = (type) => {
+//     const newType = type.toString()
+//     if (newType === "1") {
+//         return "1 month"
+//     }
+//     return newType.toString() + "months"
+// }
 const ListEggs = () => {
     const [eggs, setEggs] = useState([1,2,3,4,5]); // State to store the eggs data
     const [loading, setLoading] = useState(true); // State to track loading status
@@ -30,12 +31,12 @@ const ListEggs = () => {
     // }, []); // Empty dependency array to only run the effect once when the component mounts
 
     // Show loading indicator while fetching data
-    if (loading) {
-        return <div style={{ width: '100%', textAlign: 'center' }}>
-            <img src="https://i.gifer.com/ZKZg.gif" alt="Loading" style={{ width: '100px' }} />
-            <p>Loading...</p>
-        </div>
-    }
+    // if (loading) {
+    //     return <div style={{ width: '100%', textAlign: 'center' }}>
+    //         <img src="https://i.gifer.com/ZKZg.gif" alt="Loading" style={{ width: '100px' }} />
+    //         <p>Loading...</p>
+    //     </div>
+    // }
 
     return (
         <div className="grid grid-cols-1 sp:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-5 cart-item">

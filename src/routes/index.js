@@ -96,7 +96,8 @@ export default function Router() {
           ]
         },
         { path: 'faq', element: <FAQ /> },
-        { path: 'Contact-us', element: <ContactUs /> }
+        { path: 'Contact-us', element: <ContactUs /> },
+        { path: 'nftdetail', element: <NFTDetail /> }
       ]
     },
 
@@ -142,3 +143,4 @@ const SendMessage = Loadable(lazy(() => import('../pages/SendMessage')));
 const SendEmail = Loadable(lazy(() => import('../pages/SendEmail')));
 // Main
 const LandingPage = Loadable(lazy(() => import('../pages/LandingPage')));
+const NFTDetail = Loadable(lazy(() => import('../components/listeggs/NFTDetail')));
