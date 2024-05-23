@@ -1,7 +1,7 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import "./listeggs.css"
-import axios from 'axios'; // Import Axios for making HTTP requests
+// import axios from 'axios'; // Import Axios for making HTTP requests
 
 // const renderType = (type) => {
 //     const newType = type.toString()
@@ -12,7 +12,7 @@ import axios from 'axios'; // Import Axios for making HTTP requests
 // }
 const ListEggs = () => {
     const [eggs, setEggs] = useState([1,2,3,4,5]); // State to store the eggs data
-    const [loading, setLoading] = useState(true); // State to track loading status
+    // const [loading, setLoading] = useState(true); // State to track loading status
 
     // useEffect(() => {
     //     // Fetch data from the API endpoint
