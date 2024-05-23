@@ -512,7 +512,7 @@ const formatStringToCamelCase = (str) => {
                 className="mat-table cdk-table w-full rounded-2xl inter history"
                 role="table"
               >
-                <thead role="rowgroup">
+                <thead >
                   <tr
                     _ngcontent-fah-c165=""
                     role="row"
@@ -581,7 +581,7 @@ const formatStringToCamelCase = (str) => {
                     </th>
                   </tr>
                 </thead>
-                <tbody role="rowgroup">
+                <tbody >
                   <tr
                     _ngcontent-fah-c165=""
                     role="row"
@@ -598,7 +598,7 @@ const formatStringToCamelCase = (str) => {
                       <div _ngcontent-fah-c165="" className="ml-2 md:ml-0">
                         <a
                           _ngcontent-fah-c165=""
-                          target="_blank"
+                          
                           className="text-[#ED6D00] hover:underline cursor-pointer font-semibold text-[14px]"
                           href="https://fruitscan.io/?action=transaction&amp;id=7534778575405670836"
                         >
@@ -698,7 +698,7 @@ const formatStringToCamelCase = (str) => {
                       <div _ngcontent-fah-c165="" className="ml-2 md:ml-0">
                         <a
                           _ngcontent-fah-c165=""
-                          target="_blank"
+                          
                           className="text-[#ED6D00] hover:underline cursor-pointer font-semibold text-[14px]"
                           href="https://fruitscan.io/?action=transaction&amp;id=1496051967355945369"
                         >
@@ -781,7 +781,7 @@ const formatStringToCamelCase = (str) => {
                   </tr>
                 </tbody>
                 <tfoot
-                  role="rowgroup"
+                  
                   className="mat-table-sticky"
                   style={getStyleObjectFromString(
                     "display: none; bottom: 0px; z-index: 10;"

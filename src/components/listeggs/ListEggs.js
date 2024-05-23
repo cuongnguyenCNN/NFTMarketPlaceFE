@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import "./listeggs.css"
 // import axios from 'axios'; // Import Axios for making HTTP requests
 
@@ -11,7 +11,7 @@ import "./listeggs.css"
 //     return newType.toString() + "months"
 // }
 const ListEggs = () => {
-    const [eggs, setEggs] = useState([1,2,3,4,5]); // State to store the eggs data
+    const eggs = [1,2,3,4,5]; // State to store the eggs data
     // const [loading, setLoading] = useState(true); // State to track loading status
 
     // useEffect(() => {
