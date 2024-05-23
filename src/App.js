@@ -26,7 +26,6 @@ export default function App() {
             <ScrollToTop />
             <Router />
           </NotistackProvider>
-          <ListEggs/>
         </RtlLayout>
       </ThemePrimaryColor>
     </ThemeConfig>

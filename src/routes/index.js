@@ -113,7 +113,7 @@ export default function Router() {
     {
       path: '/',
       element: <MainLayout />,
-      children: [{ element: <LandingPage /> }]
+      children: [{path:'', element: <LandingPage /> }]
     },
     { path: '*', element: <Navigate to="/404" replace /> }
   ]);
