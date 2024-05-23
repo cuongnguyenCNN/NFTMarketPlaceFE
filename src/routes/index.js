@@ -9,6 +9,7 @@ import GuestGuard from '../guards/GuestGuard';
 import AuthGuard from '../guards/AuthGuard';
 // components
 import LoadingScreen from '../components/LoadingScreen';
+import { NFTDetail } from 'src/components/listeggs/NFTDetail';
 // ----------------------------------------------------------------------
 
 const Loadable = (Component) => (props) => {
@@ -73,7 +74,7 @@ export default function Router() {
         </AuthGuard>
       ),
       children: [
-        { element: <Navigate to="/en-US/wallet" replace /> },
+        { path:'' , element: <Navigate to="/en-US/wallet" replace /> },
         { path: 'wallet', element: <Wallet /> },
         { path: 'deposit', element: <Deposit /> },
         { path: 'withdraw', element: <Withdraw /> },
@@ -97,7 +98,7 @@ export default function Router() {
         },
         { path: 'faq', element: <FAQ /> },
         { path: 'Contact-us', element: <ContactUs /> },
-        { path: 'nftdetail', element: <NFTDetail /> }
+        { path: 'nftdetail', element: <NFTDetail/> }
       ]
     },
 
@@ -143,4 +144,3 @@ const SendMessage = Loadable(lazy(() => import('../pages/SendMessage')));
 const SendEmail = Loadable(lazy(() => import('../pages/SendEmail')));
 // Main
 const LandingPage = Loadable(lazy(() => import('../pages/LandingPage')));
-const NFTDetail = Loadable(lazy(() => import('../components/listeggs/NFTDetail')));
