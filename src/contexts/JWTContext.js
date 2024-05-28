@@ -119,7 +119,7 @@ function AuthProvider({ children }) {
   }, []);
 
   const login = async (accountName, password) => {
-    const response = await Axios.post('/api/v1/users/login', {
+    const response = await Axios.post('https://nftmarketplacebe.onrender.com/api/v1/users/login', {
       accountName,
       password
     });
@@ -139,7 +139,7 @@ function AuthProvider({ children }) {
   };
 
   const getVerifyCode = async (email) => {
-    const response = await Axios.post('/api/v1/users/getVerifyCode', {
+    const response = await Axios.post('https://nftmarketplacebe.onrender.com/api/v1/users/getVerifyCode', {
       email
     });
     const { verifyId } = response.data?.data;
@@ -147,7 +147,7 @@ function AuthProvider({ children }) {
   };
 
   const getVerifyCodeForPasswordReset = async (email) => {
-    const response = await Axios.post('/api/v1/users/getVerifyCodeForPasswordReset', {
+    const response = await Axios.post('https://nftmarketplacebe.onrender.com/api/v1/users/getVerifyCodeForPasswordReset', {
       email
     });
     const { verifyId } = response.data?.data;
@@ -164,7 +164,7 @@ function AuthProvider({ children }) {
     verifyId,
     verifyCode
   }) => {
-    const response = await Axios.post('/api/v1/users/signup', {
+    const response = await Axios.post('https://nftmarketplacebe.onrender.com/api/v1/users/signup', {
       email,
       phoneNumber,
       password,
