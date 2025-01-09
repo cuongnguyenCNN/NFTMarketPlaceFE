@@ -3,7 +3,7 @@ import axios from 'axios';
 // ----------------------------------------------------------------------
 
 const Server =
-  process.env.REACT_APP_NODE_CLIENT_ENV === 'production' ? 'https://nftmarketplacebe.onrender.com' : 'http://localhost:5001';
+  process.env.REACT_APP_NODE_CLIENT_ENV === 'production' ? 'https://nftmarketplacebe.onrender.com'  : 'https://nftmarketplacebe.onrender.com';
 
 const accessToken = window.localStorage.getItem('accessToken');
 
